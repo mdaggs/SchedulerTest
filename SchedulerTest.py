@@ -49,6 +49,7 @@ while True:
         df.to_csv(filepath)
     i += 1
     if i == 5:
+        print("Your Script Has Finished")
         break
     time.sleep(5)
     
