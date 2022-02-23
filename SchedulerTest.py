@@ -19,7 +19,7 @@ filepath = 'SchedulerTest.csv'
 
 # In[52]:
 
-
+i = 0
 while True:
     if os.path.isfile(filepath):
         print("File Exists, appending to old file")
@@ -47,9 +47,11 @@ while True:
         )
         print(df)
         df.to_csv(filepath)
-        
-    time.sleep(300)
-
+    i += 1
+    if i == 5:
+        break
+    time.sleep(5)
+    
 
 # In[ ]:
 
