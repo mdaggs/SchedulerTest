@@ -1,23 +1,13 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[50]:
-
-
 import pandas as pd
 from datetime import datetime
 import os
 import numpy as np
 import time
 
+dirPath = os.getcwd()
+print(dirPath)
+filepath = dirPath + '/SchedulerTest.csv'
 
-# In[51]:
-
-
-filepath = 'SchedulerTest.csv'
-
-
-# In[52]:
 
 i = 0
 while True:
@@ -52,46 +42,3 @@ while True:
         print("Your Script Has Finished!!!!!")
         break
     time.sleep(5)
-    
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
